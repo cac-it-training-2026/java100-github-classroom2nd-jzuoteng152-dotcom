@@ -83,10 +83,12 @@ public class Detective {
 		System.out.print("\n1か2をここに入力＞");
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		String numStr = br.readLine();
-		int num = Integer.parseInt(numStr);
+		String numstr = br.readLine();
+		int num = Integer.parseInt(numstr);
 
-		//ここに記述する
+		String answer = (num == 1) ? "不正解です。" : "正解です。";
+		System.out.println("\n探偵：");
+		System.out.println(answer);
 
 	}
 
