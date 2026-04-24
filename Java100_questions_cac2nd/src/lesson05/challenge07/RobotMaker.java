@@ -45,14 +45,15 @@ class Robot {
 	}
 
 	void makeOmelet(int eggNum, int butterNum) {
-		int bestOmeletNum1 = eggNum / 2;
-		int bestOmeletNum2 = butterNum / 5;
+		int eggqua = eggNum / 2;
+		int butterqua = butterNum / 5;
 
-		if (bestOmeletNum1 > bestOmeletNum2) {
-			System.out.println("\n" + bestOmeletNum2 + "人分のオムレツを作成しました。\n");
+		if (eggqua > butterqua) {
+			System.out.println("\n" + butterqua + "人分のオムレツを作成しました。");
+
 		} else {
-			System.out.println("\n" + bestOmeletNum1 + "人分のオムレツを作成しました。\n");
 		}
+		System.out.println("\n" + eggqua + "人分のオムレツを作成しました。");
 	}
 
 	int getWater() {
