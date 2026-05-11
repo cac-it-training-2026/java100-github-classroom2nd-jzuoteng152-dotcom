@@ -36,7 +36,23 @@
 
 package lesson05.challenge04;
 
-//ここに問題3で作成したクラスに次の条件を足したクラスを作成してください。
+class Robot {
+	int energy;
+	int water;
+	String name;
+
+	void pumpWater() {
+		randomWater();
+		System.out.println("水を" + water + "リットル出します");
+
+	}
+
+	void randomWater() {
+		water = (int) (Math.random() * 10) % 9 + 1;
+	}
+}
+
+//ここに問題3で作成したクラスに次の条件を足したクラスを作成してください
 //フィールド名：water(int型)
 //メソッド名：randomWater(引数なし、戻り値void、waterに1～9の乱数を入れるメソッド)
 //メソッドpumpWaterを改修し、randomWater()を呼び出し、
@@ -44,27 +60,30 @@ package lesson05.challenge04;
 
 public class RobotMaker {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
 
-        System.out.println("Rさん：");
-        System.out.println("でもいつも1リットルじゃつまらないですね。\n");
-        System.out.println("G博士：");
-        System.out.println("じゃあ自分で改造すればいいんじゃ。わしゃ知らん。\n");
-        System.out.println("Rさん：");
-        System.out.println("え、これ改造していいんですか？\n");
-        System.out.println("G博士：");
-        System.out.println("いいぞ。出来るならな。\n");
-        System.out.println("Rさん：");
-        System.out.println("......改造終わりました。\n");
-        System.out.println("G博士：");
-        System.out.println("本当か！どれどれ\n");
+		System.out.println("Rさん：");
+		System.out.println("でもいつも1リットルじゃつまらないですね。\n");
+		System.out.println("G博士：");
+		System.out.println("じゃあ自分で改造すればいいんじゃ。わしゃ知らん。\n");
+		System.out.println("Rさん：");
+		System.out.println("え、これ改造していいんですか？\n");
+		System.out.println("G博士：");
+		System.out.println("いいぞ。出来るならな。\n");
+		System.out.println("Rさん：");
+		System.out.println("......改造終わりました。\n");
+		System.out.println("G博士：");
+		System.out.println("本当か！どれどれ\n");
 
-        //ここでRobotクラスのインスタンスを作り、
-        //（インスタンス名はrobot）
-        //pumpWaterを実行する。
+		Robot robot = new Robot();
+		robot.pumpWater();
 
-        System.out.println("G博士：");
-        System.out.println("......確かに出来とる。\n");
-    }
+		//ここでRobotクラスのインスタンスを作り、
+		//（インスタンス名はrobot）
+		//pumpWaterを実行する。
+
+		System.out.println("G博士：");
+		System.out.println("......確かに出来とる。\n");
+	}
 
 }
