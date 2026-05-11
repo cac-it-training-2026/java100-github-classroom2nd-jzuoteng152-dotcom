@@ -47,17 +47,17 @@ public class CastleTown {
 
 		System.out.println("侍1：");
 
-		Samurai samurai1 = new Samurai();
-		samurai1.fight();
+		Samurai sa1 = new Samurai();
+		sa1.fight();
 
 		System.out.println("\n浪人はそれに加えて傘張りもします。\n");
 
 		System.out.println("浪人1：");
 
 		//ここに必要な処理を記述
-		Ronin ronin1 = new Ronin();
-		ronin1.fight();
-		ronin1.covered();
+		Ronin ro1 = new Ronin();
+		ro1.fight();
+		ro1.covered();
 
 	}
 

@@ -46,16 +46,16 @@ public class CastleTown {
 
 		System.out.println("侍1：");
 
-		Samurai samurai1 = new Samurai();
-		samurai1.fight();
+		Samurai sa1 = new Samurai();
+		sa1.fight();
 
 		System.out.println("\n藩士はそれに加えて給料をもらいます。\n");
 
 		System.out.println("藩士1：");
 
-		Retainer retainer1 = new Retainer();
-		retainer1.fight();
-		retainer1.getPaid();
+		Retainer re1 = new Retainer();
+		re1.fight();
+		re1.getPaid();
 
 		//ここに必要な処理を記述
 
